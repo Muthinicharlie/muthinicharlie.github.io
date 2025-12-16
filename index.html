@@ -4,160 +4,184 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Charles Muthinih - Fullstack Web Developer Portfolio</title>
-  <link rel="icon" type="image/favicon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body { font-family: 'Arial', sans-serif; scroll-behavior: smooth; }
-    .project-card { transition: transform 0.3s; }
-    .project-card:hover { transform: scale(1.05); }
+    body { font-family: 'Inter', 'Arial', sans-serif; scroll-behavior: smooth; }
+    .project-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .project-card:hover { transform: translateY(-8px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); }
     @media (max-width: 640px) {
       .project-card img { height: 160px; }
-      .text-4xl { font-size: 2rem; }
+      .text-4xl { font-size: 2.25rem; }
       .text-3xl { font-size: 1.875rem; }
-      .text-lg { font-size: 1rem; }
-      .text-sm { font-size: 0.875rem; }
-      .text-xs { font-size: 0.75rem; }
+      .text-lg { font-size: 1.125rem; }
     }
   </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-50 text-gray-900">
   <!-- Header -->
-  <header class="bg-sky-600 text-white py-6">
-    <div class="container mx-auto px-4 text-center">
-      <h1 class="text-4xl font-bold">Charles Muthinih</h1>
-      <p class="text-lg mt-2">Fullstack Web Developer <!-- | BSc Information Technology | Cisco CCNA (In Progress) --></p>
-      <p class="mt-2 text-sm">
-        <a href="mailto:[Your Email Address]" class="underline">charlesmuthinih@gmail.com</a> | 
-        <a href="tel:[Your Phone Number]" class="underline">0103314709</a> <!-- |  -->
-        <!-- <a href="[Portfolio Link]" class="underline">[Portfolio Link]</a> | 
-        <a href="[LinkedIn Profile]" class="underline">LinkedIn</a> -->
-      </p>
+  <header class="bg-gradient-to-r from-sky-700 to-sky-600 text-white py-10">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-5xl font-bold tracking-tight">Charles Muthinih</h1>
+      <p class="text-xl mt-3 font-medium">Fullstack Web Developer | BSc Information Technology | Cisco CCNA (In Progress)</p>
+      <div class="mt-4 text-sm space-x-4">
+        <a href="mailto:charlesmuthinih@gmail.com" class="underline hover:text-sky-200">charlesmuthinih@gmail.com</a>
+        <span>|</span>
+        <a href="tel:+254103314709" class="underline hover:text-sky-200">+254 103 314 709</a>
+        <!-- Add your actual LinkedIn and portfolio links here -->
+        <!-- <span>|</span> -->
+        <!-- <a href="[Your Portfolio Link]" class="underline hover:text-sky-200">Portfolio</a> | -->
+        <!-- <a href="[LinkedIn Profile]" class="underline hover:text-sky-200">LinkedIn</a> -->
+      </div>
     </div>
   </header>
 
   <!-- About Section -->
-  <section class="py-8 bg-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-6">About Me</h2>
-      <p class="text-lg text-center max-w-3xl mx-auto">
-        Explore my portfolio to see how I create impactful digital solutions.
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h2 class="text-4xl font-bold text-center mb-8 text-gray-800">About Me</h2>
+      <p class="text-lg text-center leading-relaxed text-gray-700">
+        Passionate fullstack web developer with expertise in building responsive, scalable, and user-centric digital solutions. Experienced in Laravel, WordPress, React, and payment integrations, delivering projects that drive efficiency, engagement, and business growth in tourism, education, and beyond.
       </p>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section class="py-8 bg-gray-100">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-6">Projects</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  <section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Featured Projects</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Project 1: Trailfinders Africa Safaris -->
-        <div class="project-card bg-white rounded-lg shadow-lg p-6">
-          <img src="trail.png" alt="Trailfinders Africa Safaris" class="w-full h-48 object-cover rounded-md mb-4">
-          <h3 class="text-lg font-semibold">Trailfinders Africa Safaris</h3>
-          <!-- <p class="text-gray-600 text-sm">A tourism platform offering affordable safari packages across East Africa, with booking and payment features.</p>
-          <p class="text-xs text-gray-500 mt-2">Features: Group booking system, M-Pesa integration, responsive design</p>
-          <p class="text-xs text-gray-500">Technologies: WordPress, MySQL, HTML, CSS, JavaScript, M-Pesa API, SEO</p>
-          <p class="text-xs text-gray-500">Outcome: Increased transaction efficiency by 25%</p> -->
-          <a href="https://trailfindersafricasafaris.com" target="_blank" class="text-blue-600 underline text-sm mt-2 block">View Project</a>
+        <div class="project-card bg-white rounded-xl shadow-md overflow-hidden">
+          <img src="trail.png" alt="Trailfinders Africa Safaris - Tourism Platform" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-3">Trailfinders Africa Safaris</h3>
+            <p class="text-gray-600 text-sm mb-2">A tourism platform offering affordable safari packages across East Africa, with booking and payment features.</p>
+            <p class="text-xs text-gray-500 mb-1">Features: Group booking system, M-Pesa integration, responsive design</p>
+            <p class="text-xs text-gray-500 mb-1">Technologies: WordPress, MySQL, HTML, CSS, JavaScript, M-Pesa API, SEO</p>
+            <p class="text-xs text-gray-500 mb-3">Outcome: Increased transaction efficiency by 25%</p>
+            <a href="https://trailfindersafricasafaris.com" target="_blank" class="text-sky-600 hover:text-sky-800 underline text-sm font-medium">View Project →</a>
+          </div>
         </div>
+
         <!-- Project 2: Marya Tours -->
-        <div class="project-card bg-white rounded-lg shadow-lg p-6">
-          <img src="marya.png" alt="Marya Tours" class="w-full h-48 object-cover rounded-md mb-4">
-          <h3 class="text-lg font-semibold">Marya Tours</h3>
-          <!-- <p class="text-gray-600 text-sm">A luxury safari website featuring exclusive accommodations and tailored travel experiences.</p>
-          <p class="text-xs text-gray-500 mt-2">Features: Dynamic accommodation listings, booking form, SEO optimization</p>
-          <p class="text-xs text-gray-500">Technologies: Laravel, MySQL, HTML, CSS, JavaScript, SEO</p>
-          <p class="text-xs text-gray-500">Outcome: Boosted user engagement by 20%</p> -->
-          <a href="https://maryatours.com" target="_blank" class="text-blue-600 underline text-sm mt-2 block">View Project</a>
+        <div class="project-card bg-white rounded-xl shadow-md overflow-hidden">
+          <img src="marya.png" alt="Marya Tours - Luxury Safari Website" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-3">Marya Tours</h3>
+            <p class="text-gray-600 text-sm mb-2">A luxury safari website featuring exclusive accommodations and tailored travel experiences.</p>
+            <p class="text-xs text-gray-500 mb-1">Features: Dynamic accommodation listings, booking form, SEO optimization</p>
+            <p class="text-xs text-gray-500 mb-1">Technologies: Laravel, MySQL, HTML, CSS, JavaScript, SEO</p>
+            <p class="text-xs text-gray-500 mb-3">Outcome: Boosted user engagement by 20%</p>
+            <a href="https://maryatours.com" target="_blank" class="text-sky-600 hover:text-sky-800 underline text-sm font-medium">View Project →</a>
+          </div>
         </div>
+
         <!-- Project 3: Eco Mara Forest Camp -->
-        <div class="project-card bg-white rounded-lg shadow-lg p-6">
-          <img src="eco.png" alt="Eco Mara Forest Camp" class="w-full h-48 object-cover rounded-md mb-4">
-          <h3 class="text-lg font-semibold">Eco Mara Forest Camp</h3>
-          <!-- <p class="text-gray-600 text-sm">An eco-tourism site promoting sustainable camping in the Maasai Mara, with booking capabilities.</p>
-          <p class="text-xs text-gray-500 mt-2">Features: Booking system, payment integration, responsive design</p>
-          <p class="text-xs text-gray-500">Technologies: WordPress, MySQL, HTML, CSS, JavaScript, PayPal API</p>
-          <p class="text-xs text-gray-500">Outcome: Enhanced booking conversions by 15%</p> -->
-          <a href="https://ecomaraforestcamp.com" target="_blank" class="text-blue-600 underline text-sm mt-2 block">View Project</a>
+        <div class="project-card bg-white rounded-xl shadow-md overflow-hidden">
+          <img src="eco.png" alt="Eco Mara Forest Camp - Eco-Tourism Site" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-3">Eco Mara Forest Camp</h3>
+            <p class="text-gray-600 text-sm mb-2">An eco-tourism site promoting sustainable camping in the Maasai Mara, with booking capabilities.</p>
+            <p class="text-xs text-gray-500 mb-1">Features: Booking system, payment integration, responsive design</p>
+            <p class="text-xs text-gray-500 mb-1">Technologies: WordPress, MySQL, HTML, CSS, JavaScript, PayPal API</p>
+            <p class="text-xs text-gray-500 mb-3">Outcome: Enhanced booking conversions by 15%</p>
+            <a href="https://ecomaraforestcamp.com" target="_blank" class="text-sky-600 hover:text-sky-800 underline text-sm font-medium">View Project →</a>
+          </div>
         </div>
+
         <!-- Project 4: Polmans Holiday Tours -->
-        <div class="project-card bg-white rounded-lg shadow-lg p-6">
-          <img src="polman.png" alt="Polmans Holiday Tours" class="w-full h-48 object-cover rounded-md mb-4">
-          <h3 class="text-lg font-semibold">Polmans Holiday Tours</h3>
-          <!-- <p class="text-gray-600 text-sm">A comprehensive tour platform offering customized travel packages across East Africa.</p>
-          <p class="text-xs text-gray-500 mt-2">Features: Itinerary builder, hotel booking, SEO optimization</p>
-          <p class="text-xs text-gray-500">Technologies: WordPress, MySQL, HTML, CSS, JavaScript, SEO</p>
-          <p class="text-xs text-gray-500">Outcome: Increased website traffic by 30%</p> -->
-          <a href="https://polmansholidaytours.com" target="_blank" class="text-blue-600 underline text-sm mt-2 block">View Project</a>
+        <div class="project-card bg-white rounded-xl shadow-md overflow-hidden">
+          <img src="polman.png" alt="Polmans Holiday Tours - Comprehensive Tour Platform" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-3">Polmans Holiday Tours</h3>
+            <p class="text-gray-600 text-sm mb-2">A comprehensive tour platform offering customized travel packages across East Africa.</p>
+            <p class="text-xs text-gray-500 mb-1">Features: Itinerary builder, hotel booking, SEO optimization</p>
+            <p class="text-xs text-gray-500 mb-1">Technologies: WordPress, MySQL, HTML, CSS, JavaScript, SEO</p>
+            <p class="text-xs text-gray-500 mb-3">Outcome: Increased website traffic by 30%</p>
+            <a href="https://polmansholidaytours.com" target="_blank" class="text-sky-600 hover:text-sky-800 underline text-sm font-medium">View Project →</a>
+          </div>
         </div>
+
         <!-- Project 5: Ace Ecotours -->
-        <div class="project-card bg-white rounded-lg shadow-lg p-6">
-          <img src="ace.png" alt="Ace Ecotours" class="w-full h-48 object-cover rounded-md mb-4">
-          <h3 class="text-lg font-semibold">Ace Ecotours</h3>
-          <!-- <p class="text-gray-600 text-sm">A safari operator site offering personalized wildlife and mountain trekking experiences.</p>
-          <p class="text-xs text-gray-500 mt-2">Features: Custom itinerary forms, booking system, responsive design</p>
-          <p class="text-xs text-gray-500">Technologies: Laravel, MySQL, HTML, CSS, JavaScript, SEO</p>
-          <p class="text-xs text-gray-500">Outcome: Improved user retention by 25%</p> -->
-          <a href="https://acecotours.com" target="_blank" class="text-blue-600 underline text-sm mt-2 block">View Project</a>
+        <div class="project-card bg-white rounded-xl shadow-md overflow-hidden">
+          <img src="ace.png" alt="Ace Ecotours - Safari Operator Site" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-3">Ace Ecotours</h3>
+            <p class="text-gray-600 text-sm mb-2">A safari operator site offering personalized wildlife and mountain trekking experiences.</p>
+            <p class="text-xs text-gray-500 mb-1">Features: Custom itinerary forms, booking system, responsive design</p>
+            <p class="text-xs text-gray-500 mb-1">Technologies: Laravel, MySQL, HTML, CSS, JavaScript, SEO</p>
+            <p class="text-xs text-gray-500 mb-3">Outcome: Improved user retention by 25%</p>
+            <a href="https://acecotours.com" target="_blank" class="text-sky-600 hover:text-sky-800 underline text-sm font-medium">View Project →</a>
+          </div>
         </div>
+
         <!-- Project 6: Maasai Dawns Safaris -->
-        <div class="project-card bg-white rounded-lg shadow-lg p-6">
-          <img src="masai.png" alt="Maasai Dawns Safaris" class="w-full h-48 object-cover rounded-md mb-4">
-          <h3 class="text-lg font-semibold">Maasai Dawns Safaris</h3>
-          <!-- <p class="text-gray-600 text-sm">A sustainable tourism site with safari packages and cultural immersion features.</p>
-          <p class="text-xs text-gray-500 mt-2">Features: Package listings, booking form, SEO optimization</p>
-          <p class="text-xs text-gray-500">Technologies: WordPress, MySQL, HTML, CSS, JavaScript, SEO</p>
-          <p class="text-xs text-gray-500">Outcome: Increased bookings by 15%</p> -->
-          <a href="https://www.maasaidawnssafaris.com" target="_blank" class="text-blue-600 underline text-sm mt-2 block">View Project</a>
+        <div class="project-card bg-white rounded-xl shadow-md overflow-hidden">
+          <img src="masai.png" alt="Maasai Dawns Safaris - Sustainable Tourism Site" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-3">Maasai Dawns Safaris</h3>
+            <p class="text-gray-600 text-sm mb-2">A sustainable tourism site with safari packages and cultural immersion features.</p>
+            <p class="text-xs text-gray-500 mb-1">Features: Package listings, booking form, SEO optimization</p>
+            <p class="text-xs text-gray-500 mb-1">Technologies: WordPress, MySQL, HTML, CSS, JavaScript, SEO</p>
+            <p class="text-xs text-gray-500 mb-3">Outcome: Increased bookings by 15%</p>
+            <a href="https://www.maasaidawnssafaris.com" target="_blank" class="text-sky-600 hover:text-sky-800 underline text-sm font-medium">View Project →</a>
+          </div>
         </div>
+
         <!-- Project 7: Adventure Travels Kenya -->
-        <div class="project-card bg-white rounded-lg shadow-lg p-6">
-          <img src="adventure.png" alt="Adventure Travels Kenya" class="w-full h-48 object-cover rounded-md mb-4">
-          <h3 class="text-lg font-semibold">Adventure Travels Kenya</h3>
-          <!-- <p class="text-gray-600 text-sm">A safari tour site offering budget and luxury packages with booking capabilities.</p>
-          <p class="text-xs text-gray-500 mt-2">Features: Booking system, payment integration, responsive design</p>
-          <p class="text-xs text-gray-500">Technologies: WordPress, MySQL, HTML, CSS, JavaScript, M-Pesa API</p>
-          <p class="text-xs text-gray-500">Outcome: Enhanced transaction efficiency by 20%</p> -->
-          <a href="https://adventuretravelskenya.com" target="_blank" class="text-blue-600 underline text-sm mt-2 block">View Project</a>
+        <div class="project-card bg-white rounded-xl shadow-md overflow-hidden">
+          <img src="adventure.png" alt="Adventure Travels Kenya - Safari Tour Site" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-3">Adventure Travels Kenya</h3>
+            <p class="text-gray-600 text-sm mb-2">A safari tour site offering budget and luxury packages with booking capabilities.</p>
+            <p class="text-xs text-gray-500 mb-1">Features: Booking system, payment integration, responsive design</p>
+            <p class="text-xs text-gray-500 mb-1">Technologies: WordPress, MySQL, HTML, CSS, JavaScript, M-Pesa API</p>
+            <p class="text-xs text-gray-500 mb-3">Outcome: Enhanced transaction efficiency by 20%</p>
+            <a href="https://adventuretravelskenya.com" target="_blank" class="text-sky-600 hover:text-sky-800 underline text-sm font-medium">View Project →</a>
+          </div>
         </div>
+
         <!-- Project 8: Imarika Online School -->
-        <div class="project-card bg-white rounded-lg shadow-lg p-6">
-          <img src="imara.png" alt="Imarika Online School" class="w-full h-48 object-cover rounded-md mb-4">
-          <h3 class="text-lg font-semibold">Imarika Online School</h3>
-          <!-- <p class="text-gray-600 text-sm">An e-learning platform with user authentication, payments, and live lesson access.</p>
-          <p class="text-xs text-gray-500 mt-2">Features: User login, payment gateway, live lesson integration</p>
-          <p class="text-xs text-gray-500">Technologies: Laravel, MySQL, HTML, CSS, JavaScript, React</p>
-          <p class="text-xs text-gray-500">Outcome: Improved student access by 30%</p> -->
-          <a href="https://www.imarikaonlineschool.co.ke" target="_blank" class="text-blue-600 underline text-sm mt-2 block">View Project</a>
+        <div class="project-card bg-white rounded-xl shadow-md overflow-hidden">
+          <img src="imara.png" alt="Imarika Online School - E-Learning Platform" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-3">Imarika Online School</h3>
+            <p class="text-gray-600 text-sm mb-2">An e-learning platform with user authentication, payments, and live lesson access.</p>
+            <p class="text-xs text-gray-500 mb-1">Features: User login, payment gateway, live lesson integration</p>
+            <p class="text-xs text-gray-500 mb-1">Technologies: Laravel, MySQL, HTML, CSS, JavaScript, React</p>
+            <p class="text-xs text-gray-500 mb-3">Outcome: Improved student access by 30%</p>
+            <a href="https://www.imarikaonlineschool.co.ke" target="_blank" class="text-sky-600 hover:text-sky-800 underline text-sm font-medium">View Project →</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section class="py-8 bg-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-6">Technical Skills</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-center">
-        <div>
-          <h3 class="text-lg font-semibold">Web Development</h3>
-          <p class="text-gray-600 text-sm">HTML, CSS, JavaScript, PHP, Laravel, WordPress, React, React Native, Bootstrap, jQuery, Vue.js, Django, RESTful APIs, SEO, BulkSMS, M-Pesa, PayPal, PesaPal</p>
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Technical Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+          <h3 class="text-xl font-semibold mb-4 text-center">Web Development</h3>
+          <p class="text-gray-700 text-sm">HTML, CSS, JavaScript, PHP, Laravel, WordPress, React, React Native, Bootstrap, jQuery, Vue.js, Django, RESTful APIs, SEO, BulkSMS, M-Pesa, PayPal, PesaPal</p>
         </div>
-        <div>
-          <h3 class="text-lg font-semibold">Database & Systems</h3>
-          <p class="text-gray-600 text-sm">MySQL, Microsoft SQL Server, MongoDB, SQLite, Oracle-ERP, SQL-based POS, Backup & Recovery</p>
+        <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+          <h3 class="text-xl font-semibold mb-4 text-center">Database & Systems</h3>
+          <p class="text-gray-700 text-sm">MySQL, Microsoft SQL Server, MongoDB, SQLite, Oracle-ERP, SQL-based POS, Backup & Recovery</p>
         </div>
-        <div>
-          <h3 class="text-lg font-semibold">Networking & IT Support</h3>
-          <p class="text-gray-600 text-sm">Network Configuration, Security, Cisco CCNA, Hardware Maintenance, CCTV Systems, User Training, Cloud Computing</p>
+        <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+          <h3 class="text-xl font-semibold mb-4 text-center">Networking & IT Support</h3>
+          <p class="text-gray-700 text-sm">Network Configuration, Security, Cisco CCNA, Hardware Maintenance, CCTV Systems, User Training, Cloud Computing</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-sky-600 text-white py-4">
-    <div class="container mx-auto px-4 text-center">
+  <footer class="bg-sky-700 text-white py-6">
+    <div class="container mx-auto px-6 text-center">
       <p class="text-sm">&copy; 2025 Charles Muthinih. All Rights Reserved.</p>
     </div>
   </footer>
